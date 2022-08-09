@@ -38,4 +38,17 @@ public class StringTest {
         //then
         Assertions.assertThat(split).containsOnly("1");
     }
+
+    /**
+     * "(1,2)" 값이 주어졌을 때 String의 substring() 메소드를 활용해 ()을 제거하고 "1,2"를 반환하도록 구현한다.
+     */
+    @Test
+    void substring() {
+        //given
+        String string = "(1,2)";
+        //when
+        String substring = string.substring(1, string.length() - 1);
+        //then
+        Assertions.assertThat(substring).isEqualTo("1,2");
+    }
 }

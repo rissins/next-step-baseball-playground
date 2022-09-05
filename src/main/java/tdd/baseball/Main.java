@@ -1,6 +1,6 @@
 package tdd.baseball;
 
-import tdd.baseball.domain.GenerateRandomNum;
+import tdd.baseball.service.GenerateRandomNum;
 import tdd.baseball.request.Input;
 import tdd.baseball.request.PlayAgain;
 import tdd.baseball.service.Judge;

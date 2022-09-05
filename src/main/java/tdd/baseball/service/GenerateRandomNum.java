@@ -1,4 +1,4 @@
-package tdd.baseball.domain;
+package tdd.baseball.service;
 
 import java.util.ArrayList;
 import java.util.List;

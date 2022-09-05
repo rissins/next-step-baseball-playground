@@ -1,16 +1,19 @@
 package tdd.baseball.request;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Input {
+    public List<Integer> playerNumber(){
+        System.out.println("숫자를 입력해주세요");
+        Scanner scanner = new Scanner(System.in);
+        List<Integer> playerNum = new ArrayList<>();
+        String input = scanner.next();
 
-    private static Scanner SCANNER = new Scanner(System.in);
-
-    public String inputNumber() {
-        return SCANNER.next();
-    }
-
-    public int inputPlayRequestNumber() {
-        return SCANNER.nextInt();
+        for(String number: input.split("")){
+            playerNum.add(Integer.parseInt(number));
+        }
+        return playerNum;
     }
 }
